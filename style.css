@@ -75,8 +75,18 @@
     color: #1F2937;
 }
 .about img {
-    width: 50%;
+    width: 30%;
+    min-width: 150px;
+    max-width: 180px;
+    max-height: 250px;
     border: 3px solid #1F2937;
+    border-radius: 1rem;
+}
+
+@media (max-width: 530px) {
+    .about img {
+        visibility: hidden;
+    }
 }
 
 
@@ -100,15 +110,23 @@
     border: 3px solid #3882F6;
     border-radius: 1rem;
     padding: 0.5rem;
+    background-color: #E5E7EB;
 }
+
 .project a {
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 0.25rem;
-    padding: 0 0.5rem;
+    padding: 0.1rem 0.5rem;
 }
 .project a:hover {
     background-color: #1F2937;
+}
+
+@media (max-width: 580px) {
+    .projects {
+        flex-direction: column;
+    }
 }
 
 /* HOME DEV */
